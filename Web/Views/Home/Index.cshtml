@@ -10,38 +10,10 @@
 
 </div>
 *@
-<div class="cen">
-    <p>
-        <label id="border">1</label>
-        <label id="border">1</label>
-        <label id="border">1</label>
-    </p>
-    <p>
-        <label id="border">2</label>
-        <label id="border">2</label>
-        <label id="border">2</label>
-    </p>
-    <p>
-        <label id="border">3</label>
-        <label id="border">3</label>
-        <label id="border">3</label>
-    </p>
-</div>
-
-
-
-<style>
-    .cen{
-        margin: 0; /*Чтоб не расползалось всё по экрану*/
-        max-width: 1200px; /*Чтоб не расползалось всё по экрану*/
-        text-align: center;
-    }
-    #border{
-        font-weight:bold;
-        height:60px;
-        width:60px;
-        background-color: lime;
-        border: 4px;
-        border-color:black;
-    }
-</style>
+<dix>
+    <h1>Привет!</h1>
+    <h2>Впиши имя и начни играть</h2>
+    <input type="text"  name="Player"id="myform" required
+           minlength="4" maxlength="8" size="10"/>
+    <button href="Start.cshtml" type="submit">Начать игру!</button>
+</dix>
