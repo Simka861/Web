@@ -1,7 +1,75 @@
-﻿@page
-@model Web.Views.Home.startModel
-@{
-}
-<div>
-    <h1>Начни играть</h1>
+﻿
+@model char[,]
+
+
+<div class="cen">
+    <table class="cen" id="border">
+        <tr>
+            <td>
+                <button id="border"><code>@Model[0,0]</code></button>
+            </td>
+            <td>
+                <button id="border"><code>@Model[0,1]</code></button>
+            </td>
+            <td>
+                <button id="border"><code>@Model[0,2]</code></button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button id="border"><code>@Model[1,0]</code></button>
+            </td>
+            <td>
+                <button id="border"><code>@Model[1,1]</code></button>
+            </td>
+            <td>
+                <button id="border"><code>@Model[1,2]</code></button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button id="border"><code>@Model[2,0]</code></button>
+            </td>
+            <td>
+                <button id="border"><code>@Model[2,1]</code></button>
+            </td>
+            <td>
+                <button id="border"><code>@Model[2,2]</code></button>
+            </td>
+        </tr>
+    </table>
+    
 </div>
+
+
+<p>
+    <button>Обновить игру</button>
+    <button>Завершить игру</button>
+</p>
+<style>
+    .cen {
+      /*  margin: 0; Чтоб не расползалось всё по экрану
+        max-width: 1200px; Чтоб не расползалось всё по экрану
+        text-align: center;
+        vertical-align: middle;
+        display: inline-block;*/
+       
+        background-color: #d9d9d9;
+        position: fixed;
+        margin-left: -150px; /* half of width */
+        margin-top: -150px; /* half of height */
+        top: 50%;
+        left: 50%;
+    }
+
+    #border {
+        font-weight: bold;
+        height: 80px;
+        width: 80px;
+        background-color: lime;
+        border: 4px;
+        border-color: black;
+        vertical-align: middle;
+        display: inline-block;
+    }
+</style>
